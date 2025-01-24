@@ -1,0 +1,101 @@
+/* Allgemeines Styling */ 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dunkler Hintergrund */
+    color: #e0e0e0; /* Hellgrauer Text */
+    position: relative;
+}
+
+/* Partikel Container */
+#particle-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #121212;
+    overflow: hidden;
+    pointer-events: none; /* Damit es das Layout nicht blockiert */
+}
+
+/* Nav Bar Styling */
+.navbar {
+    background-color: #1f1f1f; /* Dunkleres Grau */
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    position: fixed; /* Fixiert die Nav Bar oben */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Stellt sicher, dass die Nav Bar über allem anderen liegt */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-size: 1.2em;
+}
+
+.navbar a:hover {
+    color: #4CAF50; /* Grüner Hover-Effekt */
+}
+
+/* Abstand unter der Nav Bar */
+header {
+    margin-top: 70px; /* Abstand für fixierte Nav Bar */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header Schrift */
+.schrift {
+    font-size: 2em;
+    margin: 0;
+    color: #e0e0e0;
+}
+
+/* Abschnitt Styling */
+section {
+    margin: 20px;
+    padding: 20px;
+    background: #1f1f1f;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Gallerie Styling */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery img {
+    max-width: 300px; /* Maximale Breite für jedes Bild */
+    width: 100%; /* Bilder passen sich der Containerbreite an */
+    height: auto; /* Verhältnis beibehalten */
+    border-radius: 5px; /* Abgerundete Ecken */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1); /* Vergrößert das Bild leicht beim Hover */
+}
